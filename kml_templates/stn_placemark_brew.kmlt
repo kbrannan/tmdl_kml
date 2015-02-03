@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+  xmlns:gx="http://www.google.com/kml/ext/2.2">	<Document>
+		<name>Beach Sample Locations</name>
+		<Style id="stn_normal">
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="stn_highlight">
+			<IconStyle>
+				<scale>1.5</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href>
+				</Icon>
+			</IconStyle>
+<BalloonStyle>
+<text> <![CDATA[
+
+	<html>
+	<head>
+	<style>
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	th {
+		padding: 10px;
+		vertical-align:bottom;
+		font-size:100%
+	}
+	td {
+		font-size:100%
+		align:center;
+		padding: 5px;
+	}
+	p.links {
+		font-size:100%
+	}
+
+	</style>
+	</head>
+	<body style="font-family:verdana;font-size:75%;background-color:#F3FBFF">
+	<h3 style="line-height: 100%">Sample location ID: $[site] <br>Data Source: $[data_source]</h3>
+	<table width=580>
+	  <tr>
+		<th>Data Starts</th>
+		<th>Data Ends</th>
+		<th>Number<br> of Samples</th>		
+		<th>Nuber of samples<br>above criterion<sup>*</sup></th>
+	  </tr>
+	  <tr>
+		<td>$[start_date]</td>
+		<td>$[end_date]</td>
+		<td>$[N]</td>
+		<td>$[N_above]</td>
+	  </tr>
+	</table>
+	<p><sup>*</sup>Criterion used Enterococcus 158 <sup>#</sup>/<sub>100 ml</sub></p>
+	<h3> <u>Links</u></h3>
+	<p class="links">Zoom to location (not working yet)</p>
+	<p class="links"><a href=$[source_form_url]>Source Assessment Form</a></p>
+	<p class="links">Graphs of data (<a href=$[boxplot_url]>boxplot</a>, <a href=$[ts_url]>time-series plot</a>)</p>
+	<p class="links"><a href=$[desc_stat_url]>Descrptive statistics Table</a></p>
+	<p class="links"><a href=$[data_file_csv_url]>Data file (csv-format)</a></p>
+	</body>
+	</html>
+
+	]]></text>
+</BalloonStyle>
+			<LabelStyle>
+				<scale>1.1</scale>
+			</LabelStyle>
+		</Style>
+        <StyleMap id="stnsHighlight">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#stn_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#stn_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+		<Folder>
+			<name>Sample Location</name>
+			<description> Original sample locations</description><% for(ii in 1:length(tmp.stats$site)){ %>
+				<Placemark>
+					<name><%=as.character(tmp.stats$site[ii])%></name>
+					<styleUrl>#stnsHighlight</styleUrl>
+						<ExtendedData>
+						<Data name="site">
+						<value><%=as.character(tmp.stats$site[ii])%></value>
+						</Data>
+						<Data name="data_source">
+						<value><%=as.character(tmp.stats$data_sourc[ii])%></value>
+						</Data>
+						<Data name="start_date">
+						<value><%=format(tmp.stats$dte.start[ii], format="%Y-%m-%d")%></value>
+						</Data>
+						<Data name="end_date">
+						<value><%=format(tmp.stats$dte.end[ii], format="%Y-%m-%d")%></value>
+						</Data>
+						<Data name="N">
+						<value><%=as.character(tmp.stats$N[ii])%></value>
+						</Data>
+						<Data name="N_above">
+						<value><%=as.character(tmp.stats$NaboveCrit[ii])%></value>
+						</Data>
+						<Data name = "source_form_url">
+						<value>"<%=as.character(tmp.links$source.form.url[ii])%>"</value>
+						</Data>
+						<Data name="boxplot_url">
+						<value>"<%=as.character(tmp.links$boxplot.url[ii])%>"</value>
+						</Data>
+						<Data name="ts_url">
+						<value>"<%=as.character(tmp.links$ts.url[ii])%>"</value>
+						</Data>
+						<Data name="desc_stat_url">
+						<value>"<%=as.character(tmp.links$desc.stat.url[ii])%>"</value>
+						</Data>
+						<Data name="data_file_csv_url">
+						<value>"<%=as.character(tmp.links$data.file.csv.url[ii])%>"</value>
+						</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates><%=tmp.stats$lon.GE[ii]%>,<%=tmp.stats$lat.GE[ii],0%></coordinates>
+					</Point>
+				</Placemark><% } %>
+		</Folder>
+	</Document>
+</kml>
