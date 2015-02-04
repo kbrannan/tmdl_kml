@@ -6,7 +6,7 @@
 #' Not all states have StreamStats Web Services available. Check here for StreamStats Web Service Status:\url{http://streamstatsags.cr.usgs.gov/webservices/}
 #' As of 2013-08-01, coordinates for the point to be delinated must be on the flow lines of the 
 #' 100K NHD. If the coordinates are lnot on the 100K NHD flowlines, the delineated watershed will
-#' must likely be for a very small area and the data wil most likely be erroneous 
+#' must likely be for a  ery small area and the data wil most likely be erroneous 
 #' 
 #'
 #' @param x (decimal degrees) the X coordinate or Longitude of the point to be delineated.
