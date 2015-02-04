@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+		<name>Beach Sample Locations</name>
+		<Style id="stn_normal">
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="stn_highlight">
+			<IconStyle>
+				<scale>1.5</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href>
+				</Icon>
+			</IconStyle>
+<BalloonStyle>
+<bgColor>FFFFFFFF</bgColor>
+<text> <![CDATA[
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<link rel=File-List href="ballon-content_files/filelist.xml">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+b\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Page Title</title>
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:9.0pt;
+	line-height:113%;
+	text-align:left;
+	font-family:Arial;
+	font-size:8.8888pt;
+	color:black;}
+ol
+	{margin-top:0in;
+	margin-bottom:0in;
+	margin-left:-2197in;}
+ul
+	{margin-top:0in;
+	margin-bottom:0in;
+	margin-left:-2197in;}
+@page
+	{size:8.0302in 11.0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="15362" fill="f" fillcolor="white [7]"
+  strokecolor="black [0]">
+  <v:fill color="white [7]" color2="white [7]" on="f"/>
+  <v:stroke color="black [0]" color2="white [7]">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  <o:colormenu v:ext="edit" fillcolor="blue [1]" strokecolor="black [0]"
+   shadowcolor="#ccc [4]"/>
+ </o:shapedefaults><o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body link="#0066FF" vlink="#6633CC" style='margin:0'>
+
+<div style='position:absolute;width:5.-374in;height:2.0356in'>
+<!--[if gte vml 1]><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+ path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1025" type="#_x0000_t202" style='position:absolute;
+ left:9pt;top:8.99pt;width:129pt;height:18pt;z-index:1;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:shape><![endif]--><![if !vml]><span style='position:absolute;z-index:1;
+left:12px;top:12px;width:172px;height:24px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=172 height=24 style='vertical-align:top'><![endif]>
+  <div v:shape="_x0000_s1025" style='padding:2.88pt 2.88pt 2.88pt 2.88pt'
+  class=shape>
+  <p class=MsoNormal><span lang=en-US style='font-size:11.0pt;line-height:113%;
+  font-family:Arial;font-weight:bold;language:en-US'>Location ID $[site]</span></p>
+  </div>
+  <![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1026" type="#_x0000_t202"
+ style='position:absolute;left:174.75pt;top:8.99pt;width:206.25pt;height:18pt;
+ z-index:2;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:shape><![endif]--><![if !vml]><span style='position:absolute;z-index:2;
+left:233px;top:12px;width:275px;height:24px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=275 height=24 style='vertical-align:top'><![endif]>
+  <div v:shape="_x0000_s1026" style='padding:2.88pt 2.88pt 2.88pt 2.88pt'
+  class=shape>
+  <p class=MsoNormal><span lang=en-US style='font-size:11.0pt;line-height:113%;
+  font-family:Arial;font-weight:bold;language:en-US'>Data Source  $[data_source]</span></p>
+  </div>
+  <![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1028" type="#_x0000_t202"
+ style='position:absolute;left:52.5pt;top:102.74pt;width:139.5pt;height:74.26pt;
+ z-index:4;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:shape><![endif]--><![if !vml]><span style='position:absolute;z-index:4;
+left:70px;top:137px;width:186px;height:100px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=186 height=100 style='vertical-align:top'><![endif]>
+  <div v:shape="_x0000_s1028" style='padding:2.88pt 2.88pt 2.88pt 2.88pt'
+  class=shape>
+  <p class=MsoNormal style='margin-bottom:6.0pt'><span lang=en-US
+  style='font-size:12.0pt;line-height:113%;font-family:Arial;text-decoration:
+  underline;font-weight:bold;language:en-US'>Links</span></p>
+  <p class=MsoNormal style='margin-bottom:0pt'><a href="http://www.google.com"><span
+  lang=en-US style='font-size:11.0pt;line-height:113%;font-family:Arial;
+  text-decoration:underline;language:en-US'>Source assessment form</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0pt'><a href="http://www.nytimes.com"><span
+  lang=en-US style='font-size:11.0pt;line-height:113%;font-family:Arial;
+  text-decoration:underline;language:en-US'>Graph of data</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0pt'><a
+  href="http://forecast.weather.gov/MapClick.php?zoneid=ORZ011#.VDgayvmzHoE"><span
+  lang=en-US style='font-size:11.0pt;line-height:113%;font-family:Arial;
+  text-decoration:underline;language:en-US'>Data file (csv-format)</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0pt'><span lang=en-US
+  style='font-size:11.0pt;line-height:113%;font-family:Arial;language:en-US'>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=en-US style='font-size:11.0pt;line-height:113%;
+  font-family:Arial;language:en-US'>&nbsp;</span></p>
+  </div>
+  <![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><!--[if gte vml 1]><v:rect id="_x0000_s1030"
+ href="https://s3-us-west-2.amazonaws.com/midcoastbeaches/odeq_color_logo.png"
+ style='position:absolute;left:9pt;top:91.5pt;width:38.18pt;height:87.75pt;
+ z-index:5;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt'
+ o:preferrelative="t" filled="f" fillcolor="white [7]" stroked="f"
+ strokecolor="black [0]" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="ballon-content_files/image301.jpg" o:title="pansm"/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:5;
+left:12px;top:122px;width:51px;height:117px'><a
+href="https://s3-us-west-2.amazonaws.com/midcoastbeaches/odeq_color_logo.png"><img
+border=0 width=51 height=117 src="https://s3-us-west-2.amazonaws.com/midcoastbeaches/odeq_color_logo.png" v:shapes="_x0000_s1030"></a></span><![endif]><!--[if gte vml 1]><![if mso | ie]><v:shapetype
+ id="_x0000_t201" coordsize="21600,21600" o:spt="201" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path shadowok="f" o:extrusionok="f" strokeok="f" fillok="f" o:connecttype="rect"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+</v:shapetype><v:shape id="_x0000_s1027" type="#_x0000_t201" style='position:absolute;
+ left:9pt;top:31.49pt;width:372pt;height:57.16pt;z-index:3;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' stroked="f"
+ strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]" weight="0"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]" weight="0"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]" weight="0"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]" weight="0"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <o:lock v:ext="edit" rotation="t"/>
+ <v:textbox inset="0,0,0,0">
+ </v:textbox>
+</v:shape><![endif]><![endif]-->
+
+<table v:shapes="_x0000_s1027" cellpadding=0 cellspacing=0 width=496 height=76
+ border=0 dir=ltr style='width:372.0pt;height:57.16pt;border-collapse:collapse;
+ position:absolute;top:31.49pt;left:9.0pt;z-index:3'>
+ <tr>
+  <td width=108 height=48 valign=Bottom bgcolor=white style='width:81.0pt;
+  height:35.7867pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;
+  padding-bottom:2.88pt;background:white;border:solid black 1.0pt'>
+  <p class=MsoNormal style='text-align:center;margin-bottom:0pt;text-align:
+  center'><span lang=en-US style='font-size:11.0pt;line-height:113%;font-family:
+  Arial;font-weight:bold;language:en-US'>Begin Date</span></p>
+  </td>
+  <td width=108 height=48 valign=Bottom bgcolor=white style='width:81.0pt;
+  height:35.7867pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;
+  padding-bottom:2.88pt;background:white;border:solid black 1.0pt'>
+  <p class=MsoNormal style='text-align:center;margin-bottom:0pt;text-align:
+  center'><span lang=en-US style='font-size:11.0pt;line-height:113%;font-family:
+  Arial;font-weight:bold;language:en-US'>End Date</span></p>
+  </td>
+  <td width=104 height=48 valign=Bottom bgcolor=white style='width:78.0pt;
+  height:35.7867pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;
+  padding-bottom:2.88pt;background:white;border:solid black 1.0pt'>
+  <p class=MsoNormal style='text-align:center;margin-bottom:0pt;text-align:
+  center'><span lang=en-US style='font-size:11.0pt;line-height:113%;font-family:
+  Arial;font-weight:bold;language:en-US'>Number of Samples</span></p>
+  </td>
+  <td width=176 height=48 valign=Bottom bgcolor=white style='width:132.0pt;
+  height:35.7867pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;
+  padding-bottom:2.88pt;background:white;border:solid black 1.0pt'>
+  <p class=MsoNormal style='text-align:center;margin-bottom:0pt;text-align:
+  center'><span lang=en-US style='font-size:11.0pt;line-height:113%;font-family:
+  Arial;font-weight:bold;language:en-US'>Number of Samples<br>
+  </span><span
+  lang=en-US style='font-size:11.0pt;line-height:113%;font-family:Arial;
+  font-weight:bold;language:en-US'>&#8805;</span><span lang=en-US
+  style='font-size:11.0pt;line-height:113%;font-family:Arial;font-weight:bold;
+  language:en-US'> Criterion</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=108 height=28 valign=Top bgcolor=white style='width:81.0pt;
+  height:21.3668pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;
+  padding-bottom:2.88pt;background:white;border:solid black 1.0pt'>
+  <p class=MsoNormal style='text-align:center;margin-bottom:0pt;text-align:
+  center'><span lang=en-US style='font-size:11.0pt;line-height:113%;font-family:
+  Arial;language:en-US'><span dir=ltr></span>$[begin_date]</span></p>
+  </td>
+  <td width=108 height=28 valign=Top bgcolor=white style='width:81.0pt;
+  height:21.3668pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;
+  padding-bottom:2.88pt;background:white;border:solid black 1.0pt'>
+  <p class=MsoNormal style='text-align:center;margin-bottom:0pt;text-align:
+  center'><span lang=en-US style='font-size:11.0pt;line-height:113%;font-family:
+  Arial;language:en-US'><span dir=ltr></span>[end_date]</span></p>
+  </td>
+  <td width=104 height=28 valign=Top bgcolor=white style='width:78.0pt;
+  height:21.3668pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;
+  padding-bottom:2.88pt;background:white;border:solid black 1.0pt'>
+  <p class=MsoNormal style='text-align:center;margin-bottom:0pt;text-align:
+  center'><span lang=en-US style='font-size:11.0pt;line-height:113%;font-family:
+  Arial;language:en-US'><span dir=ltr></span>$[sample_count]</span></p>
+  </td>
+  <td width=176 height=28 valign=Top bgcolor=white style='width:132.0pt;
+  height:21.3668pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;
+  padding-bottom:2.88pt;background:white;border:solid black 1.0pt'>
+  <p class=MsoNormal style='text-align:center;margin-bottom:0pt;text-align:
+  center'><span lang=en-US style='font-size:11.0pt;line-height:113%;font-family:
+  Arial;language:en-US'><span dir=ltr></span>$[at_above_crit]</span></p>
+  </td>
+ </tr>
+</table>
+
+
+</div>
+
+</body>
+
+</html>
+
+
+
+]]></text>
+</BalloonStyle>
+			<LabelStyle>
+				<scale>1.1</scale>
+			</LabelStyle>
+		</Style>
+        <StyleMap id="stnsHighlight">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#stn_normal</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#stn_highlight</styleUrl>
+          </Pair>
+        </StyleMap>
+		<Folder>
+			<name>Sample Location</name>
+			<description> Original sample locations</description><% for(ii in 1:length(tmp.sp.stn.GE@data$data_sourc)){ %>
+				<Placemark>
+					<styleUrl>#stnsHighlight</styleUrl>
+					<name><%=tmp.sp.stn.GE@data$site[ii]%></name>
+<ExtendedData>
+<Data name="site">
+<value><%=as.character(tmp.sp.stn.GE@data$site[ii])%></value>
+</Data>
+<Data name="data_source">
+<value><%=as.character(tmp.sp.stn.GE@data$data_sourc[ii])%></value>
+</Data>
+<Data name="begin_date">
+<value>2014-10-10</value>
+</Data>
+<Data name="end_date">
+<value>2014-10-11</value>
+</Data>
+<Data name="sample_count">
+<value>1231</value>
+</Data>
+<Data name="at_above_crit">
+<value>26</value>
+</Data>
+</ExtendedData>
+					<Point>
+						<coordinates><%=tmp.sp.stn.GE@coords[ii,1]%>,<%=tmp.sp.stn.GE@coords[ii,2],0%></coordinates>
+					</Point>
+				</Placemark><% } %>
+		</Folder>
+	</Document>
+</kml>

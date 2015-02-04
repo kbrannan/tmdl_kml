@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+		<name>Beach Sample Locations</name>
+		<open>1</open>
+		<Schema name="Sampling_Sites" id="Sampling_Sites">
+			<SimpleField type="string" name="Name"></SimpleField>
+			<SimpleField type="string" name="Data_Source"></SimpleField>
+		</Schema>
+		<Style id="stn_hi">
+			<IconStyle>
+				<scale>1.3</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+				</Icon>
+				<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.8</scale>
+			</LabelStyle>
+			<ListStyle>
+				<ItemIcon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+				</ItemIcon>
+			</ListStyle>
+		</Style>
+		<Style id="stn_nml">
+			<IconStyle>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+				</Icon>
+				<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.8</scale>
+			</LabelStyle>
+			<ListStyle>
+				<ItemIcon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+				</ItemIcon>
+			</ListStyle>
+		</Style>
+		<StyleMap id="stns">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#stn_nml</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#stn_hi</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Folder>
+			<name>Sample Location</name>
+			<open>1</open>
+			<description>
+				Original sample locations
+			</description><% for(ii in 1:length(tmp.sp.stn.GE@data$site)){ %>
+				<Placemark>
+					<styleUrl>#stns</styleUrl>
+					<Name><%=tmp.sp.stn.GE@data$site[ii]%></Name>
+					<ExtendedData>
+						<SchemaData schemaUrl="#Sampling_Sites">
+							<SimpleData name="Data_Source"><%=tmp.sp.stn.GE@data$data_sourc[ii]%></SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Point>
+						<coordinates><%=tmp.sp.stn.GE@coords[ii,1]%>,<%=tmp.sp.stn.GE@coords[ii,2]%>,0</coordinates>
+					</Point>
+				</Placemark><% } %>
+		</Folder>
+	</Document>
+</kml>

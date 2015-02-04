@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document version="1.0">
+	<name>USEPA BEACON Beach Boundaries</name> <% for(ii in 1:length(tmp.sp.BEACON.OR.mc.add.attr.merge.GE@data$SRC_FEATID)){ %>
+	<Placemark>
+		<name><%=simpleCap(as.character(tmp.sp.BEACON.OR.mc.add.attr.merge.GE@data$BEACH_NAME[ii]))%></name>
+		<Style>
+			<IconStyle>
+				<Icon></Icon>
+			</IconStyle>
+			<LabelStyle>
+				<color>ffffaaff</color>
+				<scale>0.7</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color><%=line.colors[ii]%></color>
+				<width>5</width>
+				<scale>1.5</scale>
+			</LineStyle>
+		</Style>
+		<MultiGeometry>
+			<Point>
+				<coordinates><%=paste(tmp.sp.BEACON.OR.mc.add.attr.merge.mdpnts.GE@coords[ii,],collapse=",")%></coordinates>
+			</Point>
+			<LineString>
+				<coordinates><%=lineCoordsString(tmp.sp.BEACON.OR.mc.add.attr.merge.GE@lines[[ii]])%>
+				</coordinates>
+			</LineString>
+		</MultiGeometry>
+	</Placemark><% } %>
+</Document>
+</kml>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+	<Document>
+		<Style id="sample">
+			<IconStyle>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/purple-square-lv.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Folder>
+			<name><%=title%></name>
+			<open>1</open>
+			<description>
+				<%=description%>
+			</description>
+			<% for(i in 1:npts){ %>
+				<Placemark>
+					<styleUrl>#sample</styleUrl>
+					<Name><%=names[i]%></Name>
+					<Point>
+						<coordinates><%=x[i]%>,<%=y[i]%>,0</coordinates>
+					</Point>
+				</Placemark>
+			<% } %>
+		</Folder>
+	</Document>
+</kml>
