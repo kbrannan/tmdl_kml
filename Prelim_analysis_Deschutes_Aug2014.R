@@ -158,7 +158,7 @@ names(Des.Aug.Sp)<-codes
 
 #### Write KML files for Google Earth----
 
-brew(file=".\\Deschutes\\Des_brew_Aug14.kmlt",output="Deschutes_Aug14.kml")
+brew(file=".\\kml_templates\\Des_brew_Aug14.kmlt",output="Deschutes_Aug14.kml")
 
 #### Clean up----
 rm(list=ls())
