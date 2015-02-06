@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+  xmlns:gx="http://www.google.com/kml/ext/2.2">	<Document>
+		<name>Upper Deschutes and Little Deschutes Sampling Stations, August 2014</name>
+		<Style id="stn_normal_LD">
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="stn_highlight_LD">
+			<IconStyle>
+				<scale>1.5</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>1.1</scale>
+			</LabelStyle>
+		</Style>
+		<Style id="stn_normal_UD">
+			<IconStyle>
+				<scale>0.9</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/purple-circle.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="stn_highlight_UD">
+			<IconStyle>
+				<scale>1.5</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/paddle/purple-circle.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>1.1</scale>
+			</LabelStyle>
+		</Style>
+        <StyleMap id="stnsHighlight_LD">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#stn_normal_LD</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#stn_highlight_LD</styleUrl>
+          </Pair>
+        </StyleMap>
+		<StyleMap id="stnsHighlight_UD">
+          <Pair>
+            <key>normal</key>
+            <styleUrl>#stn_normal_UD</styleUrl>
+          </Pair>
+          <Pair>
+            <key>highlight</key>
+            <styleUrl>#stn_highlight_UD</styleUrl>
+          </Pair>
+        </StyleMap>
+		<Folder>
+			<name>Little Deschutes</name>
+			<description>Sample locations in August 2014</description><% for(i in 1:length(Des.Aug.Sp[["Little Deschutes"]]@data$STATION_KEY)){ %>
+				<Placemark>
+					<name><%=Des.Aug.Sp[["Little Deschutes"]]@data$STATION_KEY[i]%></name>
+					<styleUrl>#stnsHighlight_LD</styleUrl>
+						<ExtendedData>
+							<Data name="Site Name">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$LOCATION_DESCRIPTION[i]%></value>
+							</Data>
+							<Data name="Sample date &amp; time">
+								<value><%=format(Des.Aug.Sp[["Little Deschutes"]]@data$Sampled[i], format = "%m/%d/%Y %H:%M")%></value>
+							</Data>
+							<Data name="Temperature (°C)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Temperature (°C)"[i]%></value>
+							</Data>
+							<Data name="pH">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"pH (pH Units)"[i]%></value>
+							</Data>
+							<Data name="TSS (mg/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Total Suspended Solids (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Turbidity (NTU)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Turbidity (NTU)"[i]%></value>
+							</Data>
+							<Data name="Alkalinity (mg Calcium Carbonate/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Alkalinity, Total as CaCO3 (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Biochemical Oxygen Demand (mg/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Biochemical Oxygen Demand (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Carbonaceous Biochemical Oxygen Demand (mg/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Carbonaceous Biochemical Oxygen Demand, Stream (mg/L)"[i]%></value>
+							</Data>
+							<Data name ="Chlorophyll-a (µg/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Chlorophyll-a (µg/L)"[i]%></value>
+							</Data>
+							<Data name="Conductivity (µmhos/cm)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Conductivity (µmhos/cm)"[i]%></value>
+							</Data>
+							<Data name="Dissolved Oxygen (mg/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Dissolved Oxygen (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Dissolved Oxygen (% saturation)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Dissolved Oxygen, Saturation (%)"[i]%></value>
+							</Data>
+							<Data name="Total Organic Carbon (mg/l)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"TOC (Total Organic Carbon) (mg/l)"[i]%></value>
+							</Data>
+							<Data name="Ammonium (mg N/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Ammonia as N (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Nitrate (mg N/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Nitrate/Nitrite as N (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Total Dissolved Nitrogen (mg/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Nitrogen as N, dissolved (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Total Nitrogen (mg/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Nitrogen as N, Total (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Orthophosphate (mg P/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Orthophosphate as P (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Total Dissolved Phosphorus (mg/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Phosphate, Total Dissolved as P (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Total Phosphorus (mg/L)">
+								<value><%=Des.Aug.Sp[["Little Deschutes"]]@data$"Phosphate, Total as P (mg/L)"[i]%></value>
+							</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates><%=Des.Aug.Sp[["Little Deschutes"]]@coords[i,1]%>,<%=Des.Aug.Sp[["Little Deschutes"]]@coords[i,2],0%></coordinates>
+					</Point>
+				</Placemark><% } %>
+		</Folder>
+		<Folder>
+			<name>Upper Deschutes</name>
+			<description>Sample locations in August 2014</description><% for(i in 1:length(Des.Aug.Sp[["Upper Deschutes"]]@data$STATION_KEY)){ %>
+				<Placemark>
+					<name><%=Des.Aug.Sp[["Upper Deschutes"]]@data$STATION_KEY[i]%></name>
+					<styleUrl>#stnsHighlight_UD</styleUrl>
+						<ExtendedData>
+							<Data name="Site Name">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$LOCATION_DESCRIPTION[i]%></value>
+							</Data>
+							<Data name="Sample date &amp; time">
+								<value><%=format(Des.Aug.Sp[["Upper Deschutes"]]@data$Sampled[i], format = "%m/%d/%Y %H:%M")%></value>
+							</Data>
+							<Data name="Temperature (°C)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Temperature (°C)"[i]%></value>
+							</Data>
+							<Data name="pH">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"pH (pH Units)"[i]%></value>
+							</Data>
+							<Data name="TSS (mg/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Total Suspended Solids (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Turbidity (NTU)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Turbidity (NTU)"[i]%></value>
+							</Data>
+							<Data name="Alkalinity (mg Calcium Carbonate/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Alkalinity, Total as CaCO3 (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Biochemical Oxygen Demand (mg/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Biochemical Oxygen Demand (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Carbonaceous Biochemical Oxygen Demand (mg/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Carbonaceous Biochemical Oxygen Demand, Stream (mg/L)"[i]%></value>
+							</Data>
+							<Data name ="Chlorophyll-a (µg/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Chlorophyll-a (µg/L)"[i]%></value>
+							</Data>
+							<Data name="Conductivity (µmhos/cm)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Conductivity (µmhos/cm)"[i]%></value>
+							</Data>
+							<Data name="Dissolved Oxygen (mg/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Dissolved Oxygen (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Dissolved Oxygen (% saturation)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Dissolved Oxygen, Saturation (%)"[i]%></value>
+							</Data>
+							<Data name="Total Organic Carbon (mg/l)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"TOC (Total Organic Carbon) (mg/l)"[i]%></value>
+							</Data>
+							<Data name="Ammonium (mg N/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Ammonia as N (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Nitrate (mg N/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Nitrate/Nitrite as N (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Total Dissolved Nitrogen (mg/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Nitrogen as N, dissolved (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Total Nitrogen (mg/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Nitrogen as N, Total (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Orthophosphate (mg P/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Orthophosphate as P (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Total Dissolved Phosphorus (mg/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Phosphate, Total Dissolved as P (mg/L)"[i]%></value>
+							</Data>
+							<Data name="Total Phosphorus (mg/L)">
+								<value><%=Des.Aug.Sp[["Upper Deschutes"]]@data$"Phosphate, Total as P (mg/L)"[i]%></value>
+							</Data>
+						</ExtendedData>
+					<Point>
+						<coordinates><%=Des.Aug.Sp[["Upper Deschutes"]]@coords[i,1]%>,<%=Des.Aug.Sp[["Upper Deschutes"]]@coords[i,2],0%></coordinates>
+					</Point>
+				</Placemark><% } %>
+		</Folder>
+	</Document>
+</kml>
